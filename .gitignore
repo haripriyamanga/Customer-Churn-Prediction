@@ -1,0 +1,51 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and build output
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Trained model artefacts - regenerate with `python src/train_models.py`
+# (binary, library-version specific, and reproducible from code + data)
+models/*
+!models/.gitkeep
+
+# Secrets / environment variables (never commit these)
+.env
+.env.*
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
